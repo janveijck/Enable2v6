@@ -15,7 +15,7 @@
     <x:Property Name="in_SendMail" Type="InArgument(x:Boolean)" />
     <x:Property Name="in_EndTime" Type="InArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1870,5232</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1870,7873</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="49">
@@ -142,7 +142,7 @@
       <AssemblyReference>System.CodeDom</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Trying to log into GSuite and following actions." sap:VirtualizedContainerService.HintSize="1880,5167" sap2010:WorkflowViewState.IdRef="Sequence_18">
+  <Sequence sap2010:Annotation.AnnotationText="Trying to log into GSuite and following actions." sap:VirtualizedContainerService.HintSize="1880,7808" sap2010:WorkflowViewState.IdRef="Sequence_18">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="LoggedIn" />
       <Variable x:TypeArguments="s:DateTime" Name="dateBookingDate" />
@@ -158,17 +158,17 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1838,5079" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+    <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1838,7720" sap2010:WorkflowViewState.IdRef="RetryScope_1">
       <ui:RetryScope.ActivityBody>
         <ActivityAction>
-          <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="1796,4831" sap2010:WorkflowViewState.IdRef="Sequence_27">
+          <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="1796,7472" sap2010:WorkflowViewState.IdRef="Sequence_27">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1754,4743" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1754,7384" sap2010:WorkflowViewState.IdRef="TryCatch_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -176,14 +176,14 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <TryCatch.Try>
-                <Sequence sap:VirtualizedContainerService.HintSize="1337,4515" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                <Sequence sap:VirtualizedContainerService.HintSize="1591,7156" sap2010:WorkflowViewState.IdRef="Sequence_28">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="1295,82" sap2010:WorkflowViewState.IdRef="Assign_15">
+                  <Assign sap:VirtualizedContainerService.HintSize="1549,81" sap2010:WorkflowViewState.IdRef="Assign_15">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Boolean">[LoggedIn]</OutArgument>
                     </Assign.To>
@@ -191,9 +191,9 @@
                       <InArgument x:TypeArguments="x:Boolean">False</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1295,141" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="[LogLevel.Info]" Message="[&quot;Trying if GSuite is authenticated. &quot;]" />
-                  <Parallel sap:VirtualizedContainerService.HintSize="1295,4124" sap2010:WorkflowViewState.IdRef="Parallel_1">
-                    <uga:GSuiteApplicationScope Account="{x:Null}" ApiKey="{x:Null}" ContinueOnError="{x:Null}" CredentialID="{x:Null}" CredentialSecret="{x:Null}" KeyPath="{x:Null}" Password="{x:Null}" SecureCredentialSecret="{x:Null}" ServiceAccountEmail="{x:Null}" TimeoutMS="{x:Null}" UserEmail="{x:Null}" AuthenticationType="OAuthClientID" DataStoreLocation="Orchestrator" DisplayName="GSuite Application Scope" Folder="jveACR" HasDomainWideAccesss="False" sap:VirtualizedContainerService.HintSize="921,4077" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_1" KeyType="JSON" OAuthClient="UiPath" Services="Gmail, Calendar" User="jan..v.eijck@gmail.com">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1549,141" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="[LogLevel.Info]" Message="[&quot;Trying if GSuite is authenticated. &quot;]" />
+                  <Parallel sap:VirtualizedContainerService.HintSize="1549,6766" sap2010:WorkflowViewState.IdRef="Parallel_1">
+                    <uga:GSuiteApplicationScope Account="{x:Null}" ApiKey="{x:Null}" ContinueOnError="{x:Null}" CredentialID="{x:Null}" CredentialSecret="{x:Null}" KeyPath="{x:Null}" Password="{x:Null}" SecureCredentialSecret="{x:Null}" ServiceAccountEmail="{x:Null}" TimeoutMS="{x:Null}" UserEmail="{x:Null}" AuthenticationType="OAuthClientID" DataStoreLocation="Orchestrator" DisplayName="GSuite Application Scope" Folder="jveACR" HasDomainWideAccesss="False" sap:VirtualizedContainerService.HintSize="1175,6719" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_1" KeyType="JSON" OAuthClient="UiPath" Services="Gmail, Calendar" User="jan..v.eijck@gmail.com">
                       <uga:GSuiteApplicationScope.AuthenticationScopes>
                         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="8">
                           <InArgument x:TypeArguments="x:String">https://mail.google.com/</InArgument>
@@ -205,7 +205,7 @@
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="ug:SimpleObjectContainer" Name="GSuiteScope" />
                           </ActivityAction.Argument>
-                          <Sequence sap:VirtualizedContainerService.HintSize="887,3965" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <Sequence sap:VirtualizedContainerService.HintSize="1141,6607" sap2010:WorkflowViewState.IdRef="Sequence_15">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="s:DateTime" Name="bookingEndTime" />
                               <Variable x:TypeArguments="s:DateTime" Name="bookingStartDateTime" />
@@ -218,8 +218,8 @@
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="845,141" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Trying for availability&quot;]" />
-                            <Assign sap:VirtualizedContainerService.HintSize="845,82" sap2010:WorkflowViewState.IdRef="Assign_25">
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1099,141" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Trying for availability&quot;]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="1099,81" sap2010:WorkflowViewState.IdRef="Assign_25">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="s:DateTime">[dateBookingStartTime]</OutArgument>
                               </Assign.To>
@@ -227,7 +227,7 @@
                                 <InArgument x:TypeArguments="s:DateTime">[cdate(bookingStartTime)]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="845,82" sap2010:WorkflowViewState.IdRef="Assign_27">
+                            <Assign sap:VirtualizedContainerService.HintSize="1099,81" sap2010:WorkflowViewState.IdRef="Assign_27">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[bookingStartTime]</OutArgument>
                               </Assign.To>
@@ -235,7 +235,7 @@
                                 <InArgument x:TypeArguments="x:String">[right(dateBookingStartTime.ToString,8)]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="845,82" sap2010:WorkflowViewState.IdRef="Assign_16">
+                            <Assign sap:VirtualizedContainerService.HintSize="1099,81" sap2010:WorkflowViewState.IdRef="Assign_16">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Boolean">[LoggedIn]</OutArgument>
                               </Assign.To>
@@ -243,7 +243,7 @@
                                 <InArgument x:TypeArguments="x:Boolean">True</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign DisplayName="Combine Booking date + time" sap:VirtualizedContainerService.HintSize="845,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+                            <Assign DisplayName="Combine Booking date + time" sap:VirtualizedContainerService.HintSize="1099,81" sap2010:WorkflowViewState.IdRef="Assign_4">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[bookingDate]</OutArgument>
                               </Assign.To>
@@ -251,7 +251,7 @@
                                 <InArgument x:TypeArguments="x:String">[bookingDate + " " + bookingStartTime]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign DisplayName="Make Calendar Booking" sap:VirtualizedContainerService.HintSize="845,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+                            <Assign DisplayName="Make Calendar Booking" sap:VirtualizedContainerService.HintSize="1099,81" sap2010:WorkflowViewState.IdRef="Assign_1">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[bookingdate]</OutArgument>
                               </Assign.To>
@@ -259,7 +259,7 @@
                                 <InArgument x:TypeArguments="x:String">[cdate(bookingDate).tostring("MM/dd/yyyy HH:mm")]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="845,82" sap2010:WorkflowViewState.IdRef="Assign_7">
+                            <Assign sap:VirtualizedContainerService.HintSize="1099,81" sap2010:WorkflowViewState.IdRef="Assign_7">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="s:DateTime">[bookingStartDateTime]</OutArgument>
                               </Assign.To>
@@ -267,7 +267,7 @@
                                 <InArgument x:TypeArguments="s:DateTime">[cdate(bookingDate)]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="845,82" sap2010:WorkflowViewState.IdRef="Assign_8">
+                            <Assign sap:VirtualizedContainerService.HintSize="1099,81" sap2010:WorkflowViewState.IdRef="Assign_8">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="s:DateTime">[bookingEndTime]</OutArgument>
                               </Assign.To>
@@ -275,7 +275,7 @@
                                 <InArgument x:TypeArguments="s:DateTime">[convert.ToDateTime(bookingdate).AddMinutes(cint(bookingDuration))]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="845,82" sap2010:WorkflowViewState.IdRef="Assign_29">
+                            <Assign sap:VirtualizedContainerService.HintSize="1099,81" sap2010:WorkflowViewState.IdRef="Assign_29">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[BookingEnd]</OutArgument>
                               </Assign.To>
@@ -283,7 +283,7 @@
                                 <InArgument x:TypeArguments="x:String">[right(BookingEndTime.ToString,8)]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <If Condition="[in_SendMail]" DisplayName="If in_SendMail IsTrue (booking has been made) then send mail and create event; Else look whether appointment can be made." sap:VirtualizedContainerService.HintSize="845,2720" sap2010:WorkflowViewState.IdRef="If_10">
+                            <If Condition="[in_SendMail]" DisplayName="If in_SendMail IsTrue (booking has been made) then send mail and create event; Else look whether appointment can be made." sap:VirtualizedContainerService.HintSize="1099,5370" sap2010:WorkflowViewState.IdRef="If_10">
                               <If.Then>
                                 <Sequence sap:VirtualizedContainerService.HintSize="492,169" sap2010:WorkflowViewState.IdRef="Sequence_118">
                                   <sap:WorkflowViewStateService.ViewState>
@@ -340,13 +340,13 @@
                                 </Sequence>
                               </If.Then>
                               <If.Else>
-                                <Sequence sap:VirtualizedContainerService.HintSize="811,2369" sap2010:WorkflowViewState.IdRef="Sequence_119">
+                                <Sequence sap:VirtualizedContainerService.HintSize="1065,5019" sap2010:WorkflowViewState.IdRef="Sequence_119">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <Sequence DisplayName="Check for possible calendar conflicts" sap:VirtualizedContainerService.HintSize="769,2281" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                  <Sequence DisplayName="Check for possible calendar conflicts" sap:VirtualizedContainerService.HintSize="1023,4931" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="gacvd:Event[]" Name="CalendarEvents" />
                                     </Sequence.Variables>
@@ -356,8 +356,8 @@
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <uga:SearchEvents ContinueOnError="{x:Null}" EventId="{x:Null}" SearchQuery="{x:Null}" AuthScopesInvalid="False" CalendarId="sssg062i470cmn8hpluuvvo1h8@group.calendar.google.com" DisplayName="Search Events" EndTime="[cdate(bookingStartDateTime.tostring(&quot;MM/dd/yyyy&quot;)).AddHours(23)]" sap:VirtualizedContainerService.HintSize="707,80" sap2010:WorkflowViewState.IdRef="SearchEvents_1" MaxResults="50" Result="[CalendarEvents]" ReturnRecurring="True" StartTime="[cdate(bookingStartDateTime.tostring(&quot;MM/dd/yyyy&quot;))]" />
-                                    <If Condition="[dateBookingDate&gt;=dateHolidayStart AND dateBookingDate&lt;dateHolidayEnd]" DisplayName="If the available booking is during a planned holiday period" sap:VirtualizedContainerService.HintSize="707,2050" sap2010:WorkflowViewState.IdRef="If_11">
+                                    <uga:SearchEvents ContinueOnError="{x:Null}" EventId="{x:Null}" SearchQuery="{x:Null}" AuthScopesInvalid="False" CalendarId="sssg062i470cmn8hpluuvvo1h8@group.calendar.google.com" DisplayName="Search Events" EndTime="[cdate(bookingStartDateTime.tostring(&quot;MM/dd/yyyy&quot;)).AddHours(23)]" sap:VirtualizedContainerService.HintSize="961,80" sap2010:WorkflowViewState.IdRef="SearchEvents_1" MaxResults="50" Result="[CalendarEvents]" ReturnRecurring="True" StartTime="[cdate(bookingStartDateTime.tostring(&quot;MM/dd/yyyy&quot;))]" />
+                                    <If Condition="[dateBookingDate&gt;=dateHolidayStart AND dateBookingDate&lt;dateHolidayEnd]" DisplayName="If the available booking is during a planned holiday period" sap:VirtualizedContainerService.HintSize="961,4700" sap2010:WorkflowViewState.IdRef="If_11">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -383,13 +383,13 @@
                                         </Sequence>
                                       </If.Then>
                                       <If.Else>
-                                        <Sequence sap:VirtualizedContainerService.HintSize="673,1868" sap2010:WorkflowViewState.IdRef="Sequence_124">
+                                        <Sequence sap:VirtualizedContainerService.HintSize="927,4518" sap2010:WorkflowViewState.IdRef="Sequence_124">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <If Condition="[CalendarEvents.Count() = 0]" DisplayName="If there are no events on the appointment day" sap:VirtualizedContainerService.HintSize="631,1780" sap2010:WorkflowViewState.IdRef="If_7">
+                                          <If Condition="[CalendarEvents.Count() = 0]" DisplayName="If there are no events on the appointment day" sap:VirtualizedContainerService.HintSize="885,4430" sap2010:WorkflowViewState.IdRef="If_7">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -446,19 +446,19 @@
                                               </Sequence>
                                             </If.Then>
                                             <If.Else>
-                                              <Sequence sap:VirtualizedContainerService.HintSize="597,1429" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                                              <Sequence sap:VirtualizedContainerService.HintSize="851,4248" sap2010:WorkflowViewState.IdRef="Sequence_67">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <ui:ForEach x:TypeArguments="gacvd:Event" CurrentIndex="{x:Null}" DisplayName="Check For Each Calendar Event is there is a booking conflict." sap:VirtualizedContainerService.HintSize="555,1341" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[CalendarEvents]">
+                                                <ui:ForEach x:TypeArguments="gacvd:Event" CurrentIndex="{x:Null}" DisplayName="Check For Each Calendar Event is there is a booking conflict." sap:VirtualizedContainerService.HintSize="809,4160" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[CalendarEvents]">
                                                   <ui:ForEach.Body>
                                                     <ActivityAction x:TypeArguments="gacvd:Event">
                                                       <ActivityAction.Argument>
                                                         <DelegateInArgument x:TypeArguments="gacvd:Event" Name="CalendarEvent" />
                                                       </ActivityAction.Argument>
-                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="521,1155" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="775,3974" sap2010:WorkflowViewState.IdRef="Sequence_32">
                                                         <Sequence.Variables>
                                                           <Variable x:TypeArguments="x:String" Name="Appt" />
                                                           <Variable x:TypeArguments="x:String" Name="ApptStartTime" />
@@ -470,8 +470,8 @@
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <ui:Comment sap:VirtualizedContainerService.HintSize="479,75" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Iterate through google workspace calendar events." />
-                                                        <Assign sap:VirtualizedContainerService.HintSize="479,82" sap2010:WorkflowViewState.IdRef="Assign_12">
+                                                        <ui:Comment sap:VirtualizedContainerService.HintSize="733,75" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Iterate through google workspace calendar events." />
+                                                        <Assign sap:VirtualizedContainerService.HintSize="733,81" sap2010:WorkflowViewState.IdRef="Assign_12">
                                                           <Assign.To>
                                                             <OutArgument x:TypeArguments="x:String">[Appt]</OutArgument>
                                                           </Assign.To>
@@ -479,7 +479,7 @@
                                                             <InArgument x:TypeArguments="x:String">[left(CalendarEvent.Start.DateTime.ToString,10)]</InArgument>
                                                           </Assign.Value>
                                                         </Assign>
-                                                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,147" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                                                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="733,147" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
                                                           <ui:MultipleAssign.AssignOperations>
                                                             <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                                               <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
@@ -501,15 +501,15 @@
                                                             </scg:List>
                                                           </ui:MultipleAssign.AssignOperations>
                                                         </ui:MultipleAssign>
-                                                        <If Condition="[appt=bookingStartDateTime.tostring(&quot;MM/dd/yyyy&quot;) AND (TypeOfAppointment.tostring.Contains(&quot;Telephone&quot;) OR TypeOfAppointment.tostring.Contains(&quot;Video&quot;))]" sap:VirtualizedContainerService.HintSize="573,751" sap2010:WorkflowViewState.IdRef="If_3">
+                                                        <If Condition="[appt=bookingStartDateTime.tostring(&quot;MM/dd/yyyy&quot;) AND (TypeOfAppointment.tostring.Contains(&quot;Telephone&quot;) OR TypeOfAppointment.tostring.Contains(&quot;Video&quot;))]" sap:VirtualizedContainerService.HintSize="733,3463" sap2010:WorkflowViewState.IdRef="If_3">
                                                           <If.Then>
-                                                            <Sequence sap:VirtualizedContainerService.HintSize="539,340" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                                            <Sequence sap:VirtualizedContainerService.HintSize="699,3052" sap2010:WorkflowViewState.IdRef="Sequence_39">
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                 </scg:Dictionary>
                                                               </sap:WorkflowViewStateService.ViewState>
-                                                              <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[CalendarEvent.Start.TimeZone]" sap:VirtualizedContainerService.HintSize="497,160" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+                                                              <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[CalendarEvent.Start.TimeZone]" sap:VirtualizedContainerService.HintSize="657,160" sap2010:WorkflowViewState.IdRef="Switch`1_2">
                                                                 <Switch.Default>
                                                                   <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="431,141" sap2010:WorkflowViewState.IdRef="MultipleAssign_11">
                                                                     <ui:MultipleAssign.AssignOperations>
@@ -591,18 +591,18 @@
                                                                   </ui:MultipleAssign.AssignOperations>
                                                                 </ui:MultipleAssign>
                                                               </Switch>
-                                                              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="497,52" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+                                                              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="657,2764" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
                                                                 <ui:IfElseIf.ConditionBlocks>
                                                                   <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                                                     <ui:IfElseIfBlock BlockType="If" Condition="[(right(bookingStartDateTime.tostring, 8) &lt; in_StartTime) OR (in_EndTime &lt; BookingEnd)]">
                                                                       <ui:IfElseIfBlock.Then>
-                                                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="478,1255" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                                                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,1279" sap2010:WorkflowViewState.IdRef="Sequence_60">
                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                             </scg:Dictionary>
                                                                           </sap:WorkflowViewStateService.ViewState>
-                                                                          <Assign sap:VirtualizedContainerService.HintSize="436,82" sap2010:WorkflowViewState.IdRef="Assign_17">
+                                                                          <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_17">
                                                                             <Assign.To>
                                                                               <OutArgument x:TypeArguments="x:Boolean">[Book]</OutArgument>
                                                                             </Assign.To>
@@ -610,44 +610,89 @@
                                                                               <InArgument x:TypeArguments="x:Boolean">False</InArgument>
                                                                             </Assign.Value>
                                                                           </Assign>
-                                                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="436,141" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Warn" Message="[&quot;Booking starting too early or ending too late&quot;]" />
-                                                                          <If Condition="[right(bookingStartDateTime.tostring, 8) &lt; in_StartTime]" sap:VirtualizedContainerService.HintSize="436,411" sap2010:WorkflowViewState.IdRef="If_12">
+                                                                          <If Condition="[(right(bookingStartDateTime.tostring, 8) &lt; in_StartTime)]" sap:VirtualizedContainerService.HintSize="434,640" sap2010:WorkflowViewState.IdRef="If_14">
                                                                             <If.Then>
-                                                                              <Sequence sap:VirtualizedContainerService.HintSize="376,229" sap2010:WorkflowViewState.IdRef="Sequence_125">
+                                                                              <Sequence sap:VirtualizedContainerService.HintSize="376,229" sap2010:WorkflowViewState.IdRef="Sequence_132">
                                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                   </scg:Dictionary>
                                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_40" Level="Warn" Message="[&quot;Booking: &quot; + bookingReference + &quot; starting at &quot; + bookingDate + &quot; for &quot; + bookingDuration + &quot; minutes, conflicts with the set start time for today of &quot; + in_StartTime]" />
+                                                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_42" Level="Warn" Message="[&quot;Booking starting too early&quot;]" />
                                                                               </Sequence>
                                                                             </If.Then>
                                                                             <If.Else>
-                                                                              <Sequence sap:VirtualizedContainerService.HintSize="452,499" sap2010:WorkflowViewState.IdRef="Sequence_126">
+                                                                              <Sequence sap:VirtualizedContainerService.HintSize="376,229" sap2010:WorkflowViewState.IdRef="Sequence_133">
                                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                   </scg:Dictionary>
                                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                                <If Condition="[right(bookingStartDateTime.tostring, 8) &gt; in_EndTime]" sap:VirtualizedContainerService.HintSize="410,411" sap2010:WorkflowViewState.IdRef="If_13">
+                                                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_43" Level="Warn" Message="[&quot;Booking ending too late&quot;]" />
+                                                                              </Sequence>
+                                                                            </If.Else>
+                                                                          </If>
+                                                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Warn" Message="[&quot;Booking starting too early or ending too late&quot;]" />
+                                                                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="CommentOut_15">
+                                                                            <ui:CommentOut.Body>
+                                                                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="528,1078" sap2010:WorkflowViewState.IdRef="Sequence_131">
+                                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                  </scg:Dictionary>
+                                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                                <If Condition="[right(bookingStartDateTime.tostring, 8) &lt; in_StartTime]" sap:VirtualizedContainerService.HintSize="486,990" sap2010:WorkflowViewState.IdRef="If_12">
                                                                                   <If.Then>
-                                                                                    <Sequence sap:VirtualizedContainerService.HintSize="376,229" sap2010:WorkflowViewState.IdRef="Sequence_129">
+                                                                                    <Sequence sap:VirtualizedContainerService.HintSize="376,229" sap2010:WorkflowViewState.IdRef="Sequence_125">
                                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                         </scg:Dictionary>
                                                                                       </sap:WorkflowViewStateService.ViewState>
-                                                                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_41" Level="Warn" Message="[&quot;Booking: &quot; + bookingReference + &quot; starting at &quot; + bookingDate + &quot; for &quot; + bookingDuration + &quot; minutes, conflicts with the set end time for today of &quot; + in_EndTime]" />
+                                                                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_40" Level="Warn" Message="[&quot;Booking: &quot; + bookingReference + &quot; starting at &quot; + bookingDate + &quot; for &quot; + bookingDuration + &quot; minutes, conflicts with the set start time for today of &quot; + in_StartTime]" />
                                                                                     </Sequence>
                                                                                   </If.Then>
                                                                                   <If.Else>
-                                                                                    <Sequence sap2010:WorkflowViewState.IdRef="Sequence_130" />
+                                                                                    <Sequence sap:VirtualizedContainerService.HintSize="452,579" sap2010:WorkflowViewState.IdRef="Sequence_126">
+                                                                                      <sap:WorkflowViewStateService.ViewState>
+                                                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                        </scg:Dictionary>
+                                                                                      </sap:WorkflowViewStateService.ViewState>
+                                                                                      <If Condition="[right(bookingStartDateTime.tostring, 8) &gt; in_EndTime]" sap:VirtualizedContainerService.HintSize="410,491" sap2010:WorkflowViewState.IdRef="If_13">
+                                                                                        <If.Then>
+                                                                                          <Sequence sap:VirtualizedContainerService.HintSize="376,229" sap2010:WorkflowViewState.IdRef="Sequence_129">
+                                                                                            <sap:WorkflowViewStateService.ViewState>
+                                                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                              </scg:Dictionary>
+                                                                                            </sap:WorkflowViewStateService.ViewState>
+                                                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_41" Level="Warn" Message="[&quot;Booking: &quot; + bookingReference + &quot; starting at &quot; + bookingDate + &quot; for &quot; + bookingDuration + &quot; minutes, conflicts with the set end time for today of &quot; + in_EndTime]" />
+                                                                                          </Sequence>
+                                                                                        </If.Then>
+                                                                                        <If.Else>
+                                                                                          <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_130">
+                                                                                            <sap:WorkflowViewStateService.ViewState>
+                                                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                              </scg:Dictionary>
+                                                                                            </sap:WorkflowViewStateService.ViewState>
+                                                                                          </Sequence>
+                                                                                        </If.Else>
+                                                                                      </If>
+                                                                                    </Sequence>
                                                                                   </If.Else>
                                                                                 </If>
                                                                               </Sequence>
-                                                                            </If.Else>
-                                                                          </If>
-                                                                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,348" sap2010:WorkflowViewState.IdRef="CommentOut_14">
+                                                                            </ui:CommentOut.Body>
+                                                                            <sap:WorkflowViewStateService.ViewState>
+                                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                              </scg:Dictionary>
+                                                                            </sap:WorkflowViewStateService.ViewState>
+                                                                          </ui:CommentOut>
+                                                                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="CommentOut_14">
                                                                             <ui:CommentOut.Body>
                                                                               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,229" sap2010:WorkflowViewState.IdRef="Sequence_127">
                                                                                 <sap:WorkflowViewStateService.ViewState>
@@ -660,12 +705,12 @@
                                                                             </ui:CommentOut.Body>
                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                               </scg:Dictionary>
                                                                             </sap:WorkflowViewStateService.ViewState>
                                                                           </ui:CommentOut>
-                                                                          <ui:Break sap:VirtualizedContainerService.HintSize="436,25" sap2010:WorkflowViewState.IdRef="Break_2" />
+                                                                          <ui:Break sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="Break_2" />
                                                                         </Sequence>
                                                                       </ui:IfElseIfBlock.Then>
                                                                     </ui:IfElseIfBlock>
@@ -718,7 +763,7 @@
                                                                 </ui:IfElseIf.ConditionBlocks>
                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
@@ -766,7 +811,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uga:GSuiteApplicationScope>
-                    <uix:NCheckState DisplayName="Check App State 'Choose an account'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="200,4077" sap2010:WorkflowViewState.IdRef="NCheckState_7" Timeout="[2s]" Version="V1">
+                    <uix:NCheckState DisplayName="Check App State 'Choose an account'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="200,6719" sap2010:WorkflowViewState.IdRef="NCheckState_7" Timeout="[2s]" Version="V1">
                       <uix:NCheckState.IfExists>
                         <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="1359,3382" sap2010:WorkflowViewState.IdRef="Sequence_79">
                           <sap:WorkflowViewStateService.ViewState>
