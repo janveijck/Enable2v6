@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Takedesktopscreenshotandplaceinstoragebucket" sap:VirtualizedContainerService.HintSize="820,956.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ucas="clr-namespace:UiPath.Core.Activities.Storage;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Takedesktopscreenshotandplaceinstoragebucket" sap:VirtualizedContainerService.HintSize="1164,486" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="64">
       <x:String>System</x:String>
@@ -105,23 +105,12 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Process takes screenshot of entire screen and places it in storage bucket." sap:VirtualizedContainerService.HintSize="475.2,892" sap2010:WorkflowViewState.IdRef="Sequence_86">
-    <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="screenshotFilePath" />
-    </Sequence.Variables>
+  <Sequence sap2010:Annotation.AnnotationText="Process takes screenshot of entire screen and places it in storage bucket." sap:VirtualizedContainerService.HintSize="416,80" sap2010:WorkflowViewState.IdRef="Sequence_86">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NTakeScreenshot DisplayName="Take Screenshot" FileName="screenshot.png" FileNameMode="DateTime" sap:VirtualizedContainerService.HintSize="433.6,232.8" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_2" Version="V1">
-      <uix:NTakeScreenshot.SavedTo>
-        <OutArgument x:TypeArguments="x:String">[screenshotFilePath]</OutArgument>
-      </uix:NTakeScreenshot.SavedTo>
-    </uix:NTakeScreenshot>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[screenshotFilePath]" />
-    <ucas:UploadStorageFile FileResource="{x:Null}" TimeoutMS="{x:Null}" ContinueOnError="True" Destination="[right(screenshotfilepath,37)]" DisplayName="Upload Storage File" FolderPath="jveACR" sap:VirtualizedContainerService.HintSize="433.6,241.6" sap2010:WorkflowViewState.IdRef="UploadStorageFile_1" Path="[screenshotFilePath]" StorageBucketName="Enable2StorageBucket" />
-    <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[screenshotFilePath]" />
   </Sequence>
 </Activity>
