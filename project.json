@@ -4,16 +4,16 @@
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.GSuite.Activities": "[1.16.2]",
-    "UiPath.Mail.Activities": "[1.21.1]",
-    "UiPath.System.Activities": "[23.10.3]",
-    "UiPath.UIAutomation.Activities": "[23.10.7]"
+    "UiPath.GSuite.Activities": "[2.6.23]",
+    "UiPath.Mail.Activities": "[1.23.1]",
+    "UiPath.System.Activities": "[24.3.1]",
+    "UiPath.UIAutomation.Activities": "[24.10.0]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.10.3.0",
-  "projectVersion": "6.0.13",
+  "projectVersion": "6.0.15",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
