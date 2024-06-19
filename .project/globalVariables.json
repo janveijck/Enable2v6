@@ -22,5 +22,21 @@
     "UnresolvedTypeFullyQualifiedName": null,
     "Expression": "\"\"",
     "IsLiteral": false
+  },
+  {
+    "Constant": false,
+    "Name": "VideoOn",
+    "TypeFullyQualifiedName": "System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": "True",
+    "IsLiteral": true
+  },
+  {
+    "Constant": false,
+    "Name": "TelephoneOn",
+    "TypeFullyQualifiedName": "System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": "True",
+    "IsLiteral": true
   }
 ]
