@@ -29,7 +29,7 @@
     "TypeFullyQualifiedName": "System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
     "UnresolvedTypeFullyQualifiedName": null,
     "Expression": "True",
-    "IsLiteral": true
+    "IsLiteral": false
   },
   {
     "Constant": false,
@@ -37,6 +37,14 @@
     "TypeFullyQualifiedName": "System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
     "UnresolvedTypeFullyQualifiedName": null,
     "Expression": "True",
+    "IsLiteral": false
+  },
+  {
+    "Constant": false,
+    "Name": "MaxDuration",
+    "TypeFullyQualifiedName": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": "60",
     "IsLiteral": true
   }
 ]

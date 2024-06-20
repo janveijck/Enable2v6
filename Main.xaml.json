@@ -112,6 +112,18 @@
       "IsPrincipal": true,
       "ArgumentType": 0,
       "DataSourceItems": null
+    },
+    {
+      "Name": "in_Duration",
+      "DisplayName": "in_Duration",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "60",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
     }
   ]
 }
